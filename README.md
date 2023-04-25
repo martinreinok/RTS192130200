@@ -17,10 +17,10 @@ Real-time Systems 1
       We use O0 to simplify WCET program analysis 
   - debugging with gdb is supported (gdb is connected to simulator)
     - in one xterm start:
-      $ cd /home/rttools/cprog/rts_avr/simulavr/examples/Blink
-      $ . profile %sets ld_library_path 
-      $ ../../src/simulavr -g -v -F16000000 -d atmega328 -c vcd:tracein.txt:trace.vcd -f Blink.elf
-    - in other xterm start: $ avr-gdb -p 1212
+      $ cd /home/rttools/cprog/rts_avr/simulavr/examples/Blink  
+      $ . profile %sets ld_library_path   
+      $ ../../src/simulavr -g -v -F16000000 -d atmega328 -c vcd:tracein.txt:trace.vcd -f Blink.elf  
+    - in other xterm start: $ avr-gdb -p 1212  
     - follow other instructions on the webpage http://reprap.org/wiki/SimulAVR
     - use of debugger is not required for the exercises
 
@@ -28,10 +28,10 @@ Real-time Systems 1
 - uses the gcc/g++ cross-compiler toolchain for Atmel cores
 - code is compile using a Makefile
 - program file must end with .ino e.g. Blink.ino
-- $ cd /home/rttools/cprog/rts_avr/ArduinoMake/Arduino-Makefile-master/examples/Blink
-- $ gedit Blink.ino
-- $ . profile
-- $ make clean; make
+- $ cd /home/rttools/cprog/rts_avr/ArduinoMake/Arduino-Makefile-master/examples/Blink  
+- $ gedit Blink.ino  
+- $ . profile  
+- $ make clean; make  
 - $ cd /home/rttools/cprog/rts_avr/ArduinoMake/Arduino-Makefile-master/examples/Blink/build-uno
 - $ ls %Blink.elf should be listed 
 - $ avr-nm Blink.elf %lists all function names/code-segments in elf file
